@@ -1,0 +1,120 @@
+.header__nav-link::after { 
+    background: #fff;
+  } 
+  .footer__nav-link::after { 
+    background: #666;
+  }
+  .header__nav-link::after, .footer__nav-link::after {
+    content: " ";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    -webkit-transition: -webkit-transform .25s cubic-bezier(0,.5,.5,1);
+    transition: -webkit-transform .25s cubic-bezier(0,.5,.5,1);
+    -o-transition: -o-transform .25s cubic-bezier(0,.5,.5,1);
+    transition: transform .25s cubic-bezier(0,.5,.5,1);
+    transition: transform .25s cubic-bezier(0,.5,.5,1),
+      -webkit-transform .25s cubic-bezier(0,.5,.5,1),
+      -o-transform .25s cubic-bezier(0,.5,.5,1);
+    -webkit-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  .header__nav-link:hover::after, .footer__nav-link:hover::after {
+    -webkit-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .home__content{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  /** courses hover **/
+  .courses__block:hover a { padding-right: 38px }
+  .courses__block:hover .courses__illustr.mod--2 { opacity: 1; }
+  .courses__block:hover .courses__illustr-elem-wrap.mod--2 { transform: translate(-10px, -10px); }
+  .courses__block:hover .courses__illustr-elem-wrap.mod--1 { transform: translate(-10px, 0px); }
+  .courses__block:hover .courses__illustr-elem-wrap.mod--3, .courses__block:hover .courses__illustr-elem-wrap.mod--4 { transform: translate(0px, -10px); }
+  .courses__block:hover .courses__illustr-elem.mod--5 { 
+    transform: rotate(20deg);
+    bottom: 59px;
+  }
+  .header__col{
+    color: #fff;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    display: none;
+  }
+  .body{
+    font-family: 'Times New Roman';
+    overflow-x: hidden;
+  }
+  [data-swiper="pagin-numb"] > span {
+    height: 3px !important;
+    width: auto !important;
+    max-width: 40px;
+    margin-right: 6px;
+    margin-left: 6px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #ebbea7 !important;
+    opacity: 0.4;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+  }
+
+  .section.mod--header{
+    top: 0;
+  }
+
+  .header__col.mod--3 {
+    display: none;
+  }
+
+  .courses{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #2b2828;
+  }
+
+  .course{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: bold;
+  }
+
+
+  .w-webflow-badge {
+    display: none !important;
+  }
+
+  /* Style modal */
+  .remodal-overlay { background: rgba(27, 27, 27, 0.9); }
+  .remodal { transform: scale(1) !important; } 
+  .remodal-wrapper { 
+    padding: 0px;
+    overflow: hidden;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  } 
+  body { padding-right: 0px !important;
+  overflow-x: hidden;
+  }
+
+  .footer__follow-wrap{
+    display: none;
+  }
+  .miscontent{
+    display: none;
+  }
